@@ -1,3 +1,4 @@
-import './css/main.css';
-import './js/js';
+import css from './scss/main.scss';
 
+
+console.log("Hello webpack");

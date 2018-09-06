@@ -2,142 +2,298 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <!--<link rel="stylesheet" href="css/style.css">-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
 </head>
 <body>
-<!--header-->
-<header class="header">
-    <!--user-block-->
-    <div class="dropdown user-block">
-        <div class="dropdown__btn user-block__menu">
-                <span class="user-block__user">
-                <img class="user-block__avatar" src="img/user1_40_40.png" alt="Kim Evans"/>
-                Kim Evans
-                </span>
-            <a><i class="fa fa-sign-out"></i></a>
-        </div>
-        <div class="dropdown__submenu user-block__submenu">
-            <button class="btn">Add new post</button>
-            <button class="btn">Profile</button>
+<header class="header-wrapper">
+    <div class="header">
+        <div class="logo">
+            <a>
+                <img src="./assets/svg/logo.svg" alt="">
+            </a>
         </div>
     </div>
-    <!--logo-->
-    <img src="img/sell-it.png" height="41" width="116" class="logo"/>
-    <!--input-text-->
-    <div class="input-text input-text-search">
-        <button class="input-text__button"><i class="fa fa-search"></i></button>
-        <input type="text" class="input-text__input" required placeholder="Try find somethlink">
-        <div class="input-text__focus-line"></div>
+    <div class="sub-header">
+        <div class="sub-header__search search">
+            <b class="" search__button>
+                <img src="./assets/svg/search.svg" alt="search...">
+            </b>
+            <input type="text" class="search__input" placeholder="FIND ARTICLES">
+        </div>
+        <ul class="nav">
+            <li class="nav__item">
+                <a href="" class="nav__link">
+                    Latest
+                </a>
+            </li>
+            <li class="nav__item">
+                <a href="" class="nav__link">
+                    TECH
+                </a>
+            </li>
+            <li class="nav__item">
+                <a href="" class="nav__link">
+                    DESIGN
+                </a>
+            </li>
+            <li class="nav__item">
+                <a href="" class="nav__link">
+                    LIGHT IT
+                </a>
+            </li>
+        </ul>
     </div>
 </header>
-
-<!--content-->
 <section class="content">
-    <!--about-->
-    <div class="about">
-        <!--about__title-->
-        <p class="about__title">Some title text must be here maybe second line</p>
-        <p class="about__sub-title text_bold">from
-            <span class="_main-color">Alis Kim</span>
-            <span class="about__price">18000$</span>
-        </p>
-        <!--slideshow-->
-        <div class="slideshow about_slideshow">
-
-            <div class="slideshow__slide slideshow__slide_fade">
-                <img src="img/post1.jpg">
+    <div class="content__item-list">
+        <div class="blog-item">
+            <div class="blog-item__image-block">
+                <a href="#">
+                    <img src="" alt="" class="blog-item__image">
+                </a>
             </div>
-
-            <div class="slideshow__slide slideshow__slide_fade">
-                <img src="img/post2.jpg">
-            </div>
-
-            <div class="slideshow__slide slideshow__slide_fade">
-                <img src="img/post3.jpg">
-            </div>
-
-            <a class="slideshow__btn" onclick="plusSlides(-1)"><i class="fa fa-long-arrow-left"></i></a>
-            <a class="slideshow__btn slideshow__btn_next" onclick="plusSlides(1)"><i
-                    class="fa fa-long-arrow-right"></i></a>
-        </div>
-        <!--about__description-->
-        <div class="about__description">
-            <span>Some description text from WYSIWYG editer</span><br><br>
-            <span>Can be Can be </span><span class="text_bold">BOLD</span>
-            <span class="text_italic">Italic</span><br><br>
-            <span class="text_bold ">Can have list:</span>
-            <ul class="about__list text_bold">
-                <li>first</li>
-                <li>second</li>
-            </ul>
-            <br>
-            <span class="text_bold ">And anything from WYSIWYG editor</span><br><br>
-            <span class="text_bold ">Some line</span><br>
-            <span>Some line</span><br>
-            <span class="text_italic">Some line</span> <br><br>
-            <span class="text_bold">Finished on this line.</span>
-        </div>
-    </div>
-
-    <!--chat-->
-    <div class="chat">
-        <!--chat_title-->
-        <div class="chat_title text_bold">
-            <span class="text_big_size">Chat</span>
-            with
-            <span class="_main-color">Alis Kim</span>
-            <span class="text_green-color">
-                <i class="fa fa-square" aria-hidden="true"></i>
-            </span>
-        </div>
-        <!--contact-list-->
-        <div class="contact-list chat__contact-list dropdown">
-
-            <p class="contact-list__title-status">Connected <a
-                    class="contact-list__dropdown__btn dropdown__btn _main-color"><i
-                    class="fa fa-long-arrow-down"></i></a></p>
-
-            <ul class="contact-list__list dropdown__submenu">
-                <li class="contact-list-item">
-                    <img class="contact-list__avatar" src="img/user1_40_40.png"/>
-                    Alis Kim
-                </li>
-
-                <li class="contact-list-item">
-                    <img class="contact-list__avatar" src="img/user2_40_40.png" height="40" width="40"/>
-                    Kim Evans
-                </li>
-            </ul>
-        </div>
-        <!--chat__messages-->
-        <div class="chat__messages">
-            <div class="chat__message-line">
-                <img class="chat__message-avatar" src="img/user2_25_25.png">
-                <div class="chat__message-text">One line chat message</div>
-            </div>
-            <div class="chat__message-line chat__message_own chat__message_multi-line">
-                <img class="chat__message-avatar" src="img/user1_25_25.png">
-                <div class="chat__message-text">
-                    Multi line chat message. Some text for multi line message. What
-                    is your name. Oh sorry. My bad, your name I think Alis. Right?
-                    Please send me your contacts. May be your facebook page or
-                    some think alse. How much cost this t shirt?
+            <span src="" alt="" class="blog-item__by-author">
+                    Written by Olya Zakharyan
+                </span>
+                <div class="blog-item__tittle">
+                    On-Demand Dog Walking Platform:
+                    Features to Fill the Trust Gap
+                </div>
+            <div class="blog-item__time">
+                <div class="blog-item__time-ico">
+                    <img src="./assets/svg/time.svg" alt="">
+                </div>
+                <div class="blog-item__time-text">
+                    23 min read
                 </div>
             </div>
+            <div class="blog-item__description">
+                The digital age is hitting the pet care industry.
+                In this article we take a look at the features
+                that can help you build
+            </div>
         </div>
-        <!--chat__input-text-->
-        <div class="input-text chat__input-text">
-            <input type="text" class="input-text__input" required placeholder="Try find somethlink">
-            <button class="input-text__button"><i class="fa fa-send"></i></button>
-            <div class="input-text__focus-line"></div>
+        <div class="blog-item">
+            <div class="blog-item__image-block">
+                <a href="#">
+                    <img src="" alt="" class="blog-item__image">
+                </a>
+            </div>
+            <span src="" alt="" class="blog-item__by-author">
+                    Written by Olya Zakharyan
+                </span>
+            <div class="blog-item__tittle">
+                    On-Demand Dog Walking Platform:
+                    Features to Fill the Trust Gap
+            </div>
+            <div class="blog-item__time">
+                <div class="blog-item__time-ico">
+                    <img src="./assets/svg/time.svg" alt="">
+                </div>
+                <div class="blog-item__time-text">
+                    23 min read
+                </div>
+            </div>
+            <div class="blog-item__description">
+                The digital age is hitting the pet care industry.
+                In this article we take a look at the features
+                that can help you build
+            </div>
+        </div>
+        <div class="blog-item">
+            <div class="blog-item__image-block">
+                <a href="#">
+                    <img src="" alt="" class="blog-item__image">
+                </a>
+            </div>
+            <span src="" alt="" class="blog-item__by-author">
+                    Written by Olya Zakharyan
+                </span>
+            <div class="blog-item__tittle">
+                    On-Demand Dog Walking Platform:
+                    Features to Fill the Trust Gap
+            </div>
+            <div class="blog-item__time">
+                <div class="blog-item__time-ico">
+                    <img src="./assets/svg/time.svg" alt="">
+                </div>
+                <div class="blog-item__time-text">
+                    23 min read
+                </div>
+            </div>
+            <div class="blog-item__description">
+                The digital age is hitting the pet care industry.
+                In this article we take a look at the features
+                that can help you build
+            </div>
+        </div>
+        <div class="blog-item">
+            <div class="blog-item__image-block">
+                <a href="#">
+                    <img src="" alt="" class="blog-item__image">
+                </a>
+            </div>
+            <span src="" alt="" class="blog-item__by-author">
+                    Written by Olya Zakharyan
+                </span>
+            <div class="blog-item__tittle">
+                    On-Demand Dog Walking Platform:
+                    Features to Fill the Trust Gap
+            </div>
+            <div class="blog-item__time">
+                <div class="blog-item__time-ico">
+                    <img src="./assets/svg/time.svg" alt="">
+                </div>
+                <div class="blog-item__time-text">
+                    23 min read
+                </div>
+            </div>
+            <div class="blog-item__description">
+                The digital age is hitting the pet care industry.
+                In this article we take a look at the features
+                that can help you build
+            </div>
+        </div>
+        <div class="blog-item">
+            <div class="blog-item__image-block">
+                <a href="#">
+                    <img src="" alt="" class="blog-item__image">
+                </a>
+            </div>
+            <span src="" alt="" class="blog-item__by-author">
+                    Written by Olya Zakharyan
+                </span>
+            <div class="blog-item__tittle">
+                    On-Demand Dog Walking Platform:
+                    Features to Fill the Trust Gap
+            </div>
+            <div class="blog-item__time">
+                <div class="blog-item__time-ico">
+                    <img src="./assets/svg/time.svg" alt="">
+                </div>
+                <div class="blog-item__time-text">
+                    23 min read
+                </div>
+            </div>
+            <div class="blog-item__description">
+                The digital age is hitting the pet care industry.
+                In this article we take a look at the features
+                that can help you build
+            </div>
+        </div>
+        <div class="blog-item">
+            <div class="blog-item__image-block">
+                <a href="#">
+                    <img src="" alt="" class="blog-item__image">
+                </a>
+            </div>
+            <span src="" alt="" class="blog-item__by-author">
+                    Written by Olya Zakharyan
+                </span>
+            <div class="blog-item__tittle">
+                    On-Demand Dog Walking Platform:
+                    Features to Fill the Trust Gap
+            </div>
+            <div class="blog-item__time">
+                <div class="blog-item__time-ico">
+                    <img src="./assets/svg/time.svg" alt="">
+                </div>
+                <div class="blog-item__time-text">
+                    23 min read
+                </div>
+            </div>
+            <div class="blog-item__description">
+                The digital age is hitting the pet care industry.
+                In this article we take a look at the features
+                that can help you build
+            </div>
+        </div>
+    </div>
+    <div class="content__block">
+        <button class="button">load more</button>
+    </div>
+    <div class="content__block content__block_color-theme">
+        <div class="estimate">
+            <div class="estimate__title">TURN YOUR IDEA INTO A SUCCESFUL PROJECT</div>
+            <div class="estimate__buttons">
+                <button class="button button_size-lg button_color-inverse">ESTIMATE</button>
+                OR
+                <button class="button button_size-lg button_color-inverse">CONTACT</button>
+            </div>
         </div>
     </div>
 </section>
-<!--footer-->
-<footer>2017 - front-end labs Light IT</footer>
-<!--<script src="../dist/main.js"></script>-->
+<footer class="footer">
+    <ul class="footer__socials socials">
+        <li class="socials__item">
+            <a class="socials__link">
+                <img src="./assets/svg/facebook.svg" class="socials__ico" alt="Facebook">
+            </a>
+        </li>
+        <li class="socials__item">
+            <a class="socials__link">
+                <img src="./assets/svg/inst.svg" class="socials__ico" alt="Instagram">
+            </a>
+        </li>
+        <li class="socials__item">
+            <a class="socials__link">
+                <img src="./assets/svg/link.svg" class="socials__ico" alt="LinkIn">
+            </a>
+        </li>
+        <li class="socials__item">
+            <a class="socials__link">
+                <img src="./assets/svg/g.svg" class="socials__ico" alt="Google+">
+            </a>
+        </li>
+        <li class="socials__item">
+            <a class="socials__link">
+                <img src="./assets/svg/twitter.svg" class="socials__ico" alt="Twitter">
+            </a>
+        </li>
+    </ul>
+    <ul class="footer__nav nav">
+        <li class="nav__item">
+            <a href="" class="nav__link">
+                SERVICES
+            </a>
+        </li>
+        <li class="nav__item">
+            <a href="" class="nav__link">
+                INDUSTRIES
+            </a>
+        </li>
+        <li class="nav__item">
+            <a href="" class="nav__link">
+                EXPERTISE
+            </a>
+        </li>
+        <li class="nav__item">
+            <a href="" class="nav__link">
+                CASE/STUDY
+            </a>
+        </li>
+        <li class="nav__item">
+            <a href="" class="nav__link">
+                COMPANY
+            </a>
+        </li>
+        <li class="nav__item">
+            <a href="" class="nav__link">
+                ACADEMY
+            </a>
+        </li>
+    </ul>
+    <div class="footer__address">
+        <p>Peremohy St, 70B</p>
+        <p>Ukraine, Zaporizhzhia</p>
+        <p>email: <a>sales@light-it.net</a></p>
+    </div>
+    <div class="footer__copirating">
+        <p>Copyright ©2018 all rights reserved</p>
+        <a><p>Terms of Use and Privacy Policy</p></a>
+    </div>
+</footer>
 </body>
 </html>

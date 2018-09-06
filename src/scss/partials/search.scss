@@ -1,0 +1,35 @@
+.search {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  //height: 18px;
+  //float: left;
+
+  &__button {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    box-sizing: border-box;
+    height: 100%;
+    width: 24px;
+    cursor: pointer;
+    border: 0;
+    outline: none;
+    //color: var(--content-color);
+    background: none;
+  }
+
+  &__input {
+    margin-left: 13px;
+    opacity: 0.44;
+    font-family: var(--font-family-main);
+    font-size: 16px;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #ffffff;
+    background: none;
+  }
+}

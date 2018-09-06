@@ -1,0 +1,32 @@
+.nav {
+  margin: 0;
+  display: flex;
+  //padding: 0 .5em;
+
+  &__item {
+    margin: 0 .25em;
+    padding: 0 .3em .3em;
+    letter-spacing: .5px;
+  }
+
+  &__link {
+    padding-bottom: 5px;
+    white-space: nowrap;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 16px;
+    font-family: var(--font-family-title);
+    color: var(--color-sub-main);
+    cursor: pointer;
+    transition: color .4s, opacity .4s;
+
+    &:hover {
+      color: var(--color-content);
+    }
+
+    &:active {
+      border-bottom: 2px solid var(--color-success);
+    }
+  }
+}
