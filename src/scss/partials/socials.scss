@@ -3,14 +3,26 @@
   flex-flow: row nowrap;
   justify-content: space-between;
   align-items: center;
+
   &__item {
     padding-right: 37px;
+
     &:last-of-type {
       padding-right: 0;
     }
   }
 
   &__link {
+    color: var(--color-sub-main);
+    cursor: pointer;
+    outline: none;
+    transition: color .4s, opacity .4s;
+    text-decoration: none;
+
+
+    &:hover{
+      color: var(--color-content);
+    }
 
   }
 

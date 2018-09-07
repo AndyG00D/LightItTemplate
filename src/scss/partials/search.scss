@@ -31,5 +31,10 @@
     letter-spacing: normal;
     color: #ffffff;
     background: none;
+    outline: none;
+
+    &:focus{
+      border-bottom: 1px solid var(--color-sub-main);
+    }
   }
 }
