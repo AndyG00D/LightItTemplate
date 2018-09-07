@@ -4,8 +4,8 @@
   justify-content: space-between;
   align-items: center;
   box-sizing: border-box;
-  padding: 0 39px;
-  height: 255px;
+  padding: 0 2.4375rem;
+  height: 15.9375rem;
   color: var(--color-sub-main);
   background-color: var(--color-main);
 
@@ -14,7 +14,7 @@
   }
 
   &__nav {
-    font-size: 16px;
+    font-size: 1rem;
   }
 
   &__address {
@@ -29,7 +29,7 @@
     color: var(--color-success)
   }
 
-  &__email-link{
+  &__email-link {
     color: var(--color-success)
   }
 
